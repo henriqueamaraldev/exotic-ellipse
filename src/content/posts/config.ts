@@ -1,10 +1,10 @@
 import { defineCollection, z } from "astro:content";
 
 const postsCollection = defineCollection({
-    schema: z.object({
+    schema: ({ image }) => z.object({
         author: z.string(),
         date: z.string(),
-        iamge: z.string(),
+        iamge: image(),
         title: z.string()
     })
 })
