@@ -1,12 +1,269 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
-import H1 from "../components/H1.astro";
 import Main from "../components/Main.astro";
+import HomeButton from "../components/buttons/HomeButton.astro";
+import { Image } from "astro:assets";
 ---
 
 <Layout title="Rhythm Nation Blog">
   <Main>
-    <H1 text="Rhythm Nation" />
+    <div class="FIRST-PARTITION md:flex">
+      <div class="TITULO-E-BOTOES md:flex-row mx-auto basis-1/2">
+        <div class="TEXTOS-ORGANIZADOS-DO-TITULO text-center md:text-left">
+          <p class="dark:text-blue-200">SIMPLIFY WEB</p>
+
+          <h1
+            class="font-bold font-heading leading-tighter tracking-tighter mb-4 dark:text-gray-200 md:text-6xl text-5xl"
+          >
+            Simplify web design with astrowind:<br /> your ultimate saas companion
+          </h1>
+          <p class="text-muted text-xl dark:text-slate-300 mb-6">
+            Seamlessly blend the power of Astro 4.0 and Tailwind CSS to craft
+            websites that resonate with your brand and audience.
+          </p>
+        </div>
+        <div class="BUTTONS md:flex md:mb-10">
+          <HomeButton text="Get Started" ref="#" customClasses="bg-secondary" />
+          <HomeButton
+            text="Learn more"
+            ref="#"
+            customClasses=" bg-primary border-white"
+          />
+        </div>
+      </div>
+      <div class="IMAGE xl:mx-20 md:max-w-2xl mx-auto basis-1/2">
+        <Image
+          src="https://images.unsplash.com/photo-1580481072645-022f9a6dbf27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80&h=1200"
+          width={600}
+          height={600}
+          alt="Home image"
+          class="rounded-2xl shadow-xl mb-4 aspect-thumbnail object-cover"
+        />
+      </div>
+    </div>
+    <div
+      class="SECOND-PARTITION mx-auto relative px-4 md:py-20 md:px-6 py-12 text-default max-w-5xl"
+    >
+      <div class="TITLE-AND-DESCRIPTION text-center mb-12">
+        <h1
+          class="font-bold tracking-tighter mb-8 dark:text-gray-200 md:text-5xl text-3xl"
+        >
+          Why Choose AstroWind?
+        </h1>
+        <p class="text-muted text-xl dark:text-slate-300 mb-6">
+          Seamlessly blend the power of Astro 4.0 and Tailwind CSS to craft
+          websites that resonate with your brand and audience.
+        </p>
+      </div>
+      <div
+        class="LIST OF ITEMS text-left mx-auto gap-8 grid md:gap-y-12 md:grid-cols-2"
+      >
+        <div class="ITEM flex flex-row">
+          <div class="ICON"></div>
+          <div class="ITEM TEXT mt-0.5">
+            <h3
+              class="ITEM TITLE font-bold tracking-tighter mb-4 dark:text-gray-200 md:text-4xl text-2xl"
+            >
+              Integration of Astro 4.0 and Tailwind CSS
+            </h3>
+            <p class="ITEM DESCRIPTION text-muted mt-3">
+              Offers a powerful combination that enhances both the development
+              process and the end-user experience. Also, allows to build dynamic
+              and visually stunning websites with optimized performance.
+            </p>
+          </div>
+        </div>
+        <div class="ITEM flex flex-row">
+          <div class="ICON"></div>
+          <div class="ITEM TEXT mt-0.5">
+            <h3
+              class="ITEM TITLE font-bold tracking-tighter mb-4 dark:text-gray-200 md:text-4xl text-2xl"
+            >
+              Integration of Astro 4.0 and Tailwind CSS
+            </h3>
+            <p class="ITEM DESCRIPTION text-muted mt-3">
+              Offers a powerful combination that enhances both the development
+              process and the end-user experience. Also, allows to build dynamic
+              and visually stunning websites with optimized performance.
+            </p>
+          </div>
+        </div>
+
+        <div class="ITEM flex flex-row">
+          <div class="ICON"></div>
+          <div class="ITEM TEXT mt-0.5">
+            <h3
+              class="ITEM TITLE font-bold tracking-tighter mb-4 dark:text-gray-200 md:text-4xl text-2xl"
+            >
+              Integration of Astro 4.0 and Tailwind CSS
+            </h3>
+            <p class="ITEM DESCRIPTION text-muted mt-3">
+              Offers a powerful combination that enhances both the development
+              process and the end-user experience. Also, allows to build dynamic
+              and visually stunning websites with optimized performance.
+            </p>
+          </div>
+        </div>
+
+        <div class="ITEM flex flex-row">
+          <div class="ICON"></div>
+          <div class="ITEM TEXT mt-0.5">
+            <h3
+              class="ITEM TITLE font-bold tracking-tighter mb-4 dark:text-gray-200 md:text-4xl text-2xl"
+            >
+              Integration of Astro 4.0 and Tailwind CSS
+            </h3>
+            <p class="ITEM DESCRIPTION text-muted mt-3">
+              Offers a powerful combination that enhances both the development
+              process and the end-user experience. Also, allows to build dynamic
+              and visually stunning websites with optimized performance.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="THIRD-PARTITION">
+      <div class="TITLE text-center mb-8">
+        <h1
+          class="font-bold tracking-tighter mb-4 dark:text-gray-200 md:text-5xl text-3xl"
+        >
+          Use cases
+        </h1>
+        <p
+          class="text-muted dark:text-slate-400 mt-4 text-xl max-w-3xl mx-auto sm:text-center"
+        >
+          Discover how AstroWind's versatile template serves as the ideal
+          solution for various use cases, providing tailored solutions to drive
+          success.
+        </p>
+      </div>
+      <div class="CONTENT-IMAGE-AND-ITEMS mx-auto max-w-7xl md:px-8 p-4">
+        <div
+          class="INVERSE-WHEN-DESKTOP md:flex md:gap-16 md:flex-row-reverse md:mb-20"
+        >
+          <div class="ITEMS text-left md:basis-1/2 self-center">
+            <div class="ITEMS-TITLE mb-12">
+              <h3
+                class="font-bold tracking-tighter mb-4 dark:text-light md:text-4xl text-2xl"
+              >
+                Startup success stories: <br />
+                Launching with AstroWind
+              </h3>
+            </div>
+            <div class="ITEMS-CONTENT mx-auto gap-8 grid gap-y-4 md:gap-y-8">
+              <div class="EACH-CONTENT">
+                <div class="ICON"></div>
+                <div class="DESCRIPTION">
+                  <h2
+                    class="TITLE font-bold tracking-tighter mb-4 dark:text-light md:text-3xl text-2xl"
+                  >
+                    Description
+                  </h2>
+                  <p class="ITEM DESCRIPTION text-muted mt-3">
+                    Are you a startup with big dreams? AstroWind propels your
+                    success. Our template forges a seamless online presence,
+                    attracting investors and customers from day one. Astro 4.0
+                    and Tailwind CSS ensure striking, responsive sites, leaving
+                    lasting impressions. Countless startups leverage AstroWind
+                    to kickstart their journey and resonate with audiences.
+                  </p>
+                </div>
+              </div>
+
+              <div class="EACH-CONTENT">
+                <div class="ICON"></div>
+                <div class="DESCRIPTION">
+                  <h2
+                    class="TITLE font-bold tracking-tighter mb-4 dark:text-light md:text-3xl text-2xl"
+                  >
+                    Description
+                  </h2>
+                  <p class="ITEM DESCRIPTION text-muted mt-3">
+                    Are you a startup with big dreams? AstroWind propels your
+                    success. Our template forges a seamless online presence,
+                    attracting investors and customers from day one. Astro 4.0
+                    and Tailwind CSS ensure striking, responsive sites, leaving
+                    lasting impressions. Countless startups leverage AstroWind
+                    to kickstart their journey and resonate with audiences.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="IMAGE md:basis-1/2 self-center md:mt-0 mt-10">
+            <Image
+              src="https://images.unsplash.com/photo-1620558138198-cfb9b4f3c294?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=768&q=80&h=768"
+              width={520}
+              height={520}
+              alt="Home image"
+              class="rounded-2xl shadow-xl mb-4 aspect-thumbnail object-cover"
+            />
+          </div>
+        </div>
+        <div class="NOT-INVERSE-WHEN-DESKTOP md:flex md:gap-16 md:flex-row">
+          <div class="ITEMS text-left md:basis-1/2 self-center">
+            <div class="ITEMS-TITLE mb-12">
+              <h3
+                class="font-bold tracking-tighter mb-4 dark:text-light md:text-4xl text-2xl"
+              >
+                Startup success stories: <br />
+                Launching with AstroWind
+              </h3>
+            </div>
+            <div class="ITEMS-CONTENT mx-auto gap-8 grid gap-y-4 md:gap-y-8">
+              <div class="EACH-CONTENT">
+                <div class="ICON"></div>
+                <div class="DESCRIPTION">
+                  <h2
+                    class="TITLE font-bold tracking-tighter mb-4 dark:text-light md:text-3xl text-2xl"
+                  >
+                    Description
+                  </h2>
+                  <p class="ITEM DESCRIPTION text-muted mt-3">
+                    Are you a startup with big dreams? AstroWind propels your
+                    success. Our template forges a seamless online presence,
+                    attracting investors and customers from day one. Astro 4.0
+                    and Tailwind CSS ensure striking, responsive sites, leaving
+                    lasting impressions. Countless startups leverage AstroWind
+                    to kickstart their journey and resonate with audiences.
+                  </p>
+                </div>
+              </div>
+
+              <div class="EACH-CONTENT">
+                <div class="ICON"></div>
+                <div class="DESCRIPTION">
+                  <h2
+                    class="TITLE font-bold tracking-tighter mb-4 dark:text-light md:text-3xl text-2xl"
+                  >
+                    Description
+                  </h2>
+                  <p class="ITEM DESCRIPTION text-muted mt-3">
+                    Are you a startup with big dreams? AstroWind propels your
+                    success. Our template forges a seamless online presence,
+                    attracting investors and customers from day one. Astro 4.0
+                    and Tailwind CSS ensure striking, responsive sites, leaving
+                    lasting impressions. Countless startups leverage AstroWind
+                    to kickstart their journey and resonate with audiences.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="IMAGE md:basis-1/2 self-center md:mt-0 mt-10">
+            <Image
+              src="https://images.unsplash.com/photo-1531973486364-5fa64260d75b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=768&q=80&h=768"
+              width={520}
+              height={520}
+              alt="Home image"
+              class="rounded-2xl shadow-xl mb-4 aspect-thumbnail object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="FOURTH-PARTITION"></div>
   </Main>
 </Layout>
