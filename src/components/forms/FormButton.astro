@@ -1,0 +1,20 @@
+---
+type Props = {
+  text: string;
+  ref: string;
+  customClasses?: string;
+};
+var { text, ref, customClasses = "" } = Astro.props;
+customClasses = customClasses ? customClasses : "";
+---
+
+<div class="flex w-full text-center mb-4 justify-center">
+  <a
+    href={ref}
+    class={"block rounded text-dark font-bold no-underline text-center w-full border min-h-12 content-center border-gray-300 md:max-w-screen-sm" +
+      " " +
+      customClasses}
+  >
+    {text}
+  </a>
+</div>

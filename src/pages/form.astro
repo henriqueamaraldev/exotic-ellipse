@@ -1,0 +1,33 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Main from "../components/Main.astro";
+import { question1 } from "../content/forms/lead-report.form";
+import FormButton from "../components/forms/FormButton.astro";
+
+const question = question1;
+---
+
+<Layout title="Form" header={false}>
+  <Main>
+    <div class="flex flex-col items-center justify-center min-h-screen">
+      <h1
+        class="font-bold font-heading leading-tighter tracking-tighter mb-4 text-formPrimary md:text-3xl text-2xl lg:max-w-xl text-center"
+      >
+        {question.title}
+      </h1>
+      <h4 class="text-sm md:text-base leading-tight mb-8">
+        {question.subtitle}
+      </h4>
+      <h1
+        class="font-bold font-heading leading-tighter tracking-tighter mb-4 text-formPrimary md:text-2xl text-xl lg:max-w-xl text-center"
+      >
+        {question.label}
+      </h1>
+      {
+        question.options.map((option) => {
+          return <FormButton text={option} ref="" customClasses="" />;
+        })
+      }
+    </div>
+  </Main>
+</Layout>
